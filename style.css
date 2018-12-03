@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+body{
+background-image: url('http://www.calcioweb.eu/wp-content/uploads/2013/11/juve.jpg');
+background-size: cover;
+}
+
+.container {
+margin: auto;
+height: 100vh;
+width: 700px;
+display: flex;
+align-items: center;
+}
+
+.wrapper_slider{
+  width: 100%;
+  height: 350px;
+
+}
+
+.prew, .next{
+height: 100%;
+width: 5%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+color: white;
+font-size: 23px;
+}
+
+.prew{
+  float: left;
+}
+.wrapper_slider .images{
+  height: 100%;
+  width: 90%;
+  background: blue;
+  float: left;
+  box-shadow: 0px 0px 28px 2px rgba(0,0,0,0.55);
+}
+.wrapper_slider .images img{
+width: 100%;
+display: none;
+}
+
+.wrapper_slider .images img.active{
+display: inline-block;
+}
+
+
+
+.next{
+  float: left;
+}
